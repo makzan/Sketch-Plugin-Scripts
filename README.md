@@ -3,8 +3,11 @@ Sketch Plugin Scripts
 
 Some scripts for the Mac Sketch app.
 
-## Scripts
-- Blend Steps: duplicate the first selected object and distribute the cloned one evenly between two selection.
+### Blend Steps
+
+Duplicate the first selected object and distribute the cloned one evenly between two selection.
+
+Preview: http://www.youtube.com/watch?v=WWVoMMXYRp4
 
 ## Installation
 
