@@ -1,0 +1,30 @@
+// duplicate the first selected object and distribute the cloned one evenly between two selection.
+// at current stage, it only handles the position.
+
+if (selection.length != 2) {
+  // alert user
+  // exit
+}
+
+var times = [[doc askForUserInput:"How many steps in between?" initialValue:4] integerValue];
+var layer = selection[0];
+var frame = [layer frame];
+
+var layer2 = selection[1];
+var frame2 = [layer2 frame];
+
+// distance between two selections
+var distanceX = [frame2 x] - [frame x];
+var distanceY = [frame2 y] - [frame y];
+
+// evenly distributed the distance
+var stepX = distanceX / times;
+var stepY = distanceY / times;
+
+// loop the steps.
+for (var i=1; i<times; i++) {
+  var copy = [layer duplicate];
+  var copyFrame = [copy frame];
+  [copyFrame setX:[frame x] + stepX*i];
+  [copyFrame setY:[frame y] + stepY*i];
+}
