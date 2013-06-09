@@ -9,6 +9,16 @@ Duplicate the first selected object and distribute the cloned one evenly between
 
 Preview: http://www.youtube.com/watch?v=WWVoMMXYRp4
 
+### Simple Pattern
+
+Duplicate the selection (or use the five selections) and put them into repeatable pattern position.
+The original selection is placed at center of the artboard.
+The duplicated ones are placed at top left, top right, bottom left and bottom right correspondingly.
+
+When you select 1 object, the script duplicates it into 5 copies. If you select 5 objects, the script uses the 5 selections directlyt.
+
+Preview: http://youtu.be/KLaZWYp5BIU
+
 ## Installation
 
 ### For Sketch from Mac App Store:

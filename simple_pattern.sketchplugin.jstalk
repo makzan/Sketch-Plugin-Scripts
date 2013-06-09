@@ -1,0 +1,46 @@
+// duplicate the selection (or use the five selections) and put them into repeatable pattern position.
+// one center, one top left, one top right, one bottom left and one bottom right.
+
+var layer = selection[0];
+var frame = [layer frame];
+
+var parent = [layer parentGroup];
+
+[frame setX: ([[parent frame] width] - [frame width])/2 ];
+[frame setY: ([[parent frame] height] - [frame height])/2 ];
+
+if ([selection count] == 1) {
+  var clone1 = [layer duplicate];
+  var clone2 = [layer duplicate];
+  var clone3 = [layer duplicate];
+  var clone4 = [layer duplicate];
+} else if ([selection count] == 5) {
+  var clone1 = selection[1];
+  var clone2 = selection[2];
+  var clone3 = selection[3];
+  var clone4 = selection[4];
+} else {
+  // prompt for incorrect selection count.
+}
+
+NSLog("selection length: " + [selection count]);
+
+
+var frame1 = [clone1 frame];
+[frame1 setX:0 - [frame1 width]/2];
+[frame1 setY:0 - [frame1 height]/2];
+
+
+var frame2 = [clone2 frame];
+[frame2 setX:[[parent frame] width] - [frame2 width]/2];
+[frame2 setY:0 - [frame2 height]/2];
+
+
+var frame3 = [clone3 frame];
+[frame3 setX:0 - [frame3 width]/2];
+[frame3 setY:[[parent frame] height] - [frame3 height]/2];
+
+
+var frame4 = [clone4 frame];
+[frame4 setX:[[parent frame] width] - [frame2 width]/2];
+[frame4 setY:[[parent frame] height] - [frame4 height]/2];
