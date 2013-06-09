@@ -18,11 +18,11 @@ var distanceX = [frame2 x] - [frame x];
 var distanceY = [frame2 y] - [frame y];
 
 // evenly distributed the distance
-var stepX = distanceX / times;
-var stepY = distanceY / times;
+var stepX = distanceX / (times+1);
+var stepY = distanceY / (times+1);
 
 // loop the steps.
-for (var i=1; i<times; i++) {
+for (var i=1; i<=times; i++) {
   var copy = [layer duplicate];
   var copyFrame = [copy frame];
   [copyFrame setX:[frame x] + stepX*i];
