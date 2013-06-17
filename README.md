@@ -19,6 +19,10 @@ When you select 1 object, the script duplicates it into 5 copies. If you select 
 
 Preview: http://youtu.be/KLaZWYp5BIU
 
+### Fill Artboard
+
+I usaully need to draw a rectangle as background with the same dimension of the artboard. This script does it.
+
 ## Installation
 
 ### For Sketch from Mac App Store:
