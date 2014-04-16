@@ -33,6 +33,10 @@ Place the .jstalk file inside `~/library/application support/sketch/plugins`
 
 _If you are unsure where to place the files, you can open the plugin forder by choosing `Plugins | Reveal Plugins Folder...` in latest Sketch menu._
 
+### About .jstalk extension
+
+If you are not confortable with the .jstalk extension, you can rename it from `.sketchplugin.jstalk` to `.sketchplugin`.
+
 ## License
 
 Totally free for any usage.
