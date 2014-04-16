@@ -1,0 +1,8 @@
+// Make the selection fill the height of parent group (artboard).
+
+var layer = selection[0];
+var frame = [layer frame];
+var parent = [layer parentGroup];
+
+[frame setY: 0];
+[frame setHeight: [[parent frame] height]];

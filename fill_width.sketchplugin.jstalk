@@ -1,0 +1,8 @@
+// Make the selection fill the width of parent group (artboard).
+
+var layer = selection[0];
+var frame = [layer frame];
+var parent = [layer parentGroup];
+
+[frame setX: 0];
+[frame setWidth: [[parent frame] width]];
