@@ -21,7 +21,11 @@ Preview: http://youtu.be/KLaZWYp5BIU
 
 ### Fill Artboard
 
-I usaully need to draw a rectangle as background with the same dimension of the artboard. This script does it.
+I usaully need to draw a rectangle as background with the same dimension of the artboard.
+
+### Fill Width/Height
+
+Sometimes I need to qucikly set the shape to the width of the artboard. You may check the 7 sceonds demo video on how this works: http://youtu.be/KBA4IzyEUDU
 
 ## Installation
 
