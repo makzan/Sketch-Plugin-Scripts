@@ -31,6 +31,8 @@ Place the .jstalk file inside `~/Library/Containers/com.bohemiancoding.sketch/Da
 ### For Sketch from Downloads:
 Place the .jstalk file inside `~/library/application support/sketch/plugins`
 
+_If you are unsure where to place the files, you can open the plugin forder by choosing `Plugins | Reveal Plugins Folder...` in latest Sketch menu._
+
 ## License
 
 Totally free for any usage.
