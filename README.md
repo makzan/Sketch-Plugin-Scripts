@@ -21,9 +21,13 @@ Preview: http://youtu.be/KLaZWYp5BIU
 
 ### Duplicate as Pattern
 
+![dup-as-pattern](http://makzan.github.io/Sketch-Plugin-Scripts/images/dup-as-pattern.png)
+
 Duplicate the selection and put into the other edge, as if they are one object seamlessly connected.
 
-Preview: http://youtu.be/I27yhLQ6F-g
+Preview Video: http://youtu.be/I27yhLQ6F-g
+
+
 
 ### Fill Artboard
 
