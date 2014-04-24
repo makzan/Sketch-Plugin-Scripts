@@ -1,0 +1,66 @@
+// duplicate the selection and put the clone into the other edge.
+
+var layer = selection[0];
+var frame = [layer frame];
+
+var parent = [layer parentGroup];
+parentWidth = [[parent frame] width];
+parentHeight = [[parent frame] height];
+
+// left and top edge
+if ([frame x] < 0) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] + parentWidth];
+}
+
+if ([frame y] < 0) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setY: [frame y] + parentHeight];
+}
+
+// right and bottom edge
+if ([frame x] + [frame width] > parentWidth) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] - parentWidth];
+}
+
+if ([frame y] + [frame height] > parentHeight) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setY: [frame y] - parentHeight];
+}
+
+// top-left corner
+if ([frame x] < 0 && [frame y] < 0) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] + parentWidth];
+  [frame2 setY: [frame y] + parentHeight];
+}
+
+// bottom-right corner
+if ([frame x] + [frame width] > parentWidth && [frame y] + [frame height] > parentHeight) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] - parentWidth];
+  [frame2 setY: [frame y] - parentHeight];
+}
+
+// top-right corner
+if ([frame y] < 0 && [frame x] + [frame width] > parentWidth) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] - parentWidth];
+  [frame2 setY: [frame y] + parentHeight];
+}
+
+// bottom-left corner
+if ([frame x] < 0 && [frame y] + [frame height] > parentHeight) {
+  var clone = [layer duplicate];
+  var frame2 = [clone frame];
+  [frame2 setX: [frame x] + parentWidth];
+  [frame2 setY: [frame y] - parentHeight];
+}
