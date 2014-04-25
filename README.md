@@ -33,6 +33,8 @@ Preview Video: http://youtu.be/I27yhLQ6F-g
 
 I usually need to draw a rectangle as background with the same dimension of the artboard.
 
+![fill-artboard](http://makzan.github.io/Sketch-Plugin-Scripts/images/fill-artboard.gif)
+
 ### Fill Width/Height
 
 Sometimes I need to quickly set the shape to the width of the artboard. You may check the 7 seconds demo video on how this works: http://youtu.be/KBA4IzyEUDU
