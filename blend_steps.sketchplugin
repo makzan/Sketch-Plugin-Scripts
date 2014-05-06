@@ -23,8 +23,8 @@ var stepY = distanceY / (times+1);
 
 // loop the steps.
 for (var i=1; i<=times; i++) {
-  var copy = [layer duplicate];
-  var copyFrame = [copy frame];
+  var clone = [layer duplicate];
+  var copyFrame = [clone frame];
   [copyFrame setX:[frame x] + stepX*i];
   [copyFrame setY:[frame y] + stepY*i];
 }
