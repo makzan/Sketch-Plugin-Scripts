@@ -5,6 +5,8 @@ Some scripts for the Mac Sketch app.
 
 ### Blend Steps
 
+![bled steps GIF](http://makzan.github.io/Sketch-Plugin-Scripts/images/blend_steps.gif)
+
 Duplicate the first selected object and distribute the cloned one evenly between two selection.
 
 Preview: http://www.youtube.com/watch?v=WWVoMMXYRp4
